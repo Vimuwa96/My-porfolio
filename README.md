@@ -1,2 +1,2 @@
-# My-porfolio
+# My Porfolio
 Vimukthi Malinda
