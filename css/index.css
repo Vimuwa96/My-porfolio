@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+
+body,html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #000;
+    font-family: 'Roboto Mono', monospace;
+    scroll-behavior: smooth;
+}
+
+
+
+
+#main_header {
+    display: flex;
+    padding-left: 15px;
+    padding-top: 50px;
+    font-size:5vw;
+
+
+}
+
+.custom-shape-divider-top-1671907394 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+#second_section {
+    width: 80%;
+    color: rgb(8, 153, 49);
+    font-family: 'Roboto Mono', monospace;
+    padding-bottom: 35px;
+
+}
+
+
+
+#typewriter {
+    float: left;
+	font-size: 4vw;
+    font-family: 'Roboto Mono', monospace;
+    color: aliceblue;
+    line-height: -1rem;
+}
+
+
+.about_me {
+    position: relative;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(160, 165, 170);
+    font-size: 4vw;
+    padding-left: 1.25rem;
+    border-left: 0.9rem solid #0ba5c7;
+    
+
+}
+
+#third_section {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    font-size: larger;
+    color: aliceblue;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.card {
+    width: 15rem;
+    height: 20rem;
+    transition: 1s;
+    cursor: pointer;
+    padding-bottom: 25px;
+    color: #000;
+    word-wrap: normal;
+    border-radius: 15px;
+}
+
+
+.card:hover{
+    background-color: rgb(53, 51, 51);
+    color: white;
+  }
+
+
+
+  
+  .card-header:hover{
+    text-decoration:overline;
+  }
+
+
+     
+  #fourth_section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100vh;
+    background-color: rgb(94, 95, 96);
+    font-size: larger;
+    color: aliceblue;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+
+  #fifth_section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 20vh;
+    background-color: rgb(3, 3, 3);
+    font-size: larger;
+    color: aliceblue;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+
+
+  .fourth_sections {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100vh;
+    background-color: rgb(10, 129, 249);
+    font-size: larger;
+    color: aliceblue;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+
+  
+
