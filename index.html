@@ -13,7 +13,10 @@
     />
 
     <!-- Fontawsome -->
-    <script src="https://kit.fontawesome.com/1a3b5235e0.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/1a3b5235e0.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- CSS Links -->
     <link rel="stylesheet" href="css/index.css" />
@@ -22,6 +25,10 @@
 
     <!-- JQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.filterizr.min.js"></script>
 
     <!-- Bootstrap CDN -->
     <link
@@ -106,10 +113,11 @@
             <p class="designation">Full Stack Web Developer</p>
 
             <p class="description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut dicta
-              cumque numquam illum nesciunt nam autem corporis sint, animi
-              laboriosam cupiditate corrupti, sed perferendis? Consequuntur,
-              ratione! Nemo natus architecto delectus!
+              My name is Vimukthi Malinda Rupasinghe from Colombo, Sri Lanka, and I am
+              passionate about creating exceptional online experiences. With a
+              strong background in web development and a keen eye for design, I
+              specialize in crafting visually stunning and highly functional
+              websites.
             </p>
 
             <p style="text-transform: uppercase; color: #7c7979">
@@ -245,7 +253,7 @@
     <!-- Services -->
     <div class="services-wrapper pt-5 pb-5">
       <div class="container" id="services">
-        <hr />
+        <!-- <hr /> -->
         <p><span class="portfolio">Services</span></p>
 
         <div class="row pb-3">
@@ -364,25 +372,36 @@
             <p><span class="portfolio">Portfolio</span></p>
 
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur.
+              Here, some of my projects I demo here for your reference. 
             </p>
           </div>
 
           <div class="col-md-2"></div>
 
           <div class="col-md-6 pt-5">
-            <div class="row text-center pt-3" id="catagery-row">
-              <div class="col-4">
-                <p><span class="catagery align-middle">All Works</span></p>
-              </div>
-              <div class="col-4">
-                <p><span class="catagery align-middle">Personal Works</span></p>
-              </div>
-              <div class="col-4">
-                <p>
-                  <span class="catagery align-middle">Prefessional Works</span>
-                </p>
+            <div class="filter-list">
+              <div class="row text-center pt-3" id="catagery-row">
+                <div class="col-4">
+                  <p>
+                    <span class="catagery align-middle" data-filter="all"
+                      >All Works</span
+                    >
+                  </p>
+                </div>
+                <div class="col-4">
+                  <p>
+                    <span class="catagery align-middle" data-filter="1"
+                      >Personal Works</span
+                    >
+                  </p>
+                </div>
+                <div class="col-4">
+                  <p>
+                    <span class="catagery align-middle" data-filter="2"
+                      >Prefessional Works</span
+                    >
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -391,94 +410,160 @@
 
       <div class="container pb-5">
         <div class="row">
-          <div class="col-md-3 col-6 g-3">
-            <a href="">
-              <div class="project-content text-center">
-                <div class="project-card border-1">
-                  <img
-                    src="imges/Project01.png"
-                    alt=""
-                    width="100%"
-                    height="100%"
-                  />
-                  <div class="middle">
-                    <div class="view">View Project</div>
+          <div class="filtr-container">
+            <div
+              class="col-md-3 col-6 p-4 pt-3 filtr-item"
+              data-category="1"
+              data-sort="value"
+            >
+              <a href="http://hawthorne.epizy.com/">
+                <div class="project-content text-center">
+                  <div class="project-card border-1">
+                    <img
+                      src="projects/Hawthrone.png"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                    />
+                    <div class="middle">
+                      <div class="view">View Project</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-          </div>
+              </a>
+            </div>
 
-          <div class="col-md-3 col-6 g-3">
-            <a href="">
-              <div class="project-content text-center">
-                <div class="project-card border-1">
-                  <img
-                    src="imges/Project01.png"
-                    alt=""
-                    width="100%"
-                    height="100%"
-                  />
-                  <div class="middle">
-                    <div class="view">View Project</div>
+            <div
+              class="col-md-3 col-6 p-4 pt-3 filtr-item"
+              data-category="1"
+              data-sort="value"
+            >
+              <a href="https://pymanbell.com/">
+                <div class="project-content text-center">
+                  <div class="project-card border-1">
+                    <img
+                      src="projects/Pymanbell.png"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                    />
+                    <div class="middle">
+                      <div class="view">View Project</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-          </div>
+              </a>
+            </div>
 
-          <div class="col-md-3 col-6 g-3">
-            <a href="">
-              <div class="project-content text-center">
-                <div class="project-card border-1">
-                  <img
-                    src="imges/Project01.png"
-                    alt=""
-                    width="100%"
-                    height="100%"
-                  />
-                  <div class="middle">
-                    <div class="view">View Project</div>
+            <div
+              class="col-md-3 col-6 p-4 pt-3 filtr-item"
+              data-category="2"
+              data-sort="value"
+            >
+              <a href="https://vimuwa96.github.io/healthyLanka/">
+                <div class="project-content text-center">
+                  <div class="project-card border-1">
+                    <img
+                      src="projects/HealthyLanka.png"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                    />
+                    <div class="middle">
+                      <div class="view">View Project</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-          </div>
+              </a>
+            </div>
 
-          <div class="col-md-3 col-6 g-3">
-            <a href="">
-              <div class="project-content text-center">
-                <div class="project-card border-1">
-                  <img
-                    src="imges/Project01.png"
-                    alt=""
-                    width="100%"
-                    height="100%"
-                  />
-                  <div class="middle">
-                    <div class="view">View Project</div>
+            <div
+              class="col-md-3 col-6 p-4 pt-3 filtr-item"
+              data-category="1"
+              data-sort="value"
+            >
+              <a href="https://vimuwa96.github.io/Ads-Solutions/">
+                <div class="project-content text-center">
+                  <div class="project-card border-1">
+                    <img
+                      src="projects/Ads.png"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                    />
+                    <div class="middle">
+                      <div class="view">View Project</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
-          </div>
+              </a>
+            </div>
 
-          <div class="col-md-3 col-6 g-3">
-            <a href="">
-              <div class="project-content text-center">
-                <div class="project-card border-1">
-                  <img
-                    src="imges/Project01.png"
-                    alt=""
-                    width="100%"
-                    height="100%"
-                  />
-                  <div class="middle">
-                    <div class="view">View Project</div>
+            <div
+              class="col-md-3 col-6 p-4 pt-3 filtr-item"
+              data-category="2"
+              data-sort="value"
+            >
+              <a href="http://vivaenchanglat.epizy.com/">
+                <div class="project-content text-center">
+                  <div class="project-card border-1">
+                    <img
+                      src="projects/Viva.png"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                    />
+                    <div class="middle">
+                      <div class="view">View Project</div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
+
+            <div
+              class="col-md-3 col-6 p-4 pt-3 filtr-item"
+              data-category="2"
+              data-sort="value"
+            >
+              <a href="https://vimuwa96.github.io/BOC-Online-Banking/home.html">
+                <div class="project-content text-center">
+                  <div class="project-card border-1">
+                    <img
+                      src="projects/BOC.png"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                    />
+                    <div class="middle">
+                      <div class="view">View Project</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="col-md-3 col-6 p-4 pt-3 filtr-item"
+              data-category="2"
+              data-sort="value"
+            >
+              <a href="http://medidata.epizy.com/">
+                <div class="project-content text-center">
+                  <div class="project-card border-1">
+                    <img
+                      src="projects/Medi.png"
+                      alt=""
+                      width="100%"
+                      height="100%"
+                    />
+                    <div class="middle">
+                      <div class="view">View Project</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -492,9 +577,7 @@
         <p><span class="portfolio pb-5">Contact Me</span></p>
 
         <p style="color: white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sunt
-          laudantium nemo non, quos totam numquam! Hic minus saepe vero tenetur
-          ducimus reiciendis soluta velit unde odit, et cumque similique!
+          If you have any further queries regarding the conditions of the contract please do not hesitate to contact me.
         </p>
 
         <div class="row pt-3">
@@ -524,7 +607,13 @@
               <div class="col-md-10 col-10" style="align-items: start">
                 <ul>
                   <li style="color: #7c7979">Call Me</li>
-                  <li>0764906767</li>
+                  <li>
+                    <a
+                      href="tel:+94764906767"
+                      style="text-decoration: none; color: white"
+                      >0764906767</a
+                    >
+                  </li>
                 </ul>
               </div>
 
@@ -551,7 +640,13 @@
               <div class="col-md-10 col-10" style="align-items: start">
                 <ul>
                   <li style="color: #7c7979">Email</li>
-                  <li>vmalinda866@gmail.com</li>
+                  <li>
+                    <a
+                      href="mailto:vmalinda866@gmail.com"
+                      style="text-decoration: none; color: white"
+                      >vmalinda866@gmail.com
+                    </a>
+                  </li>
                 </ul>
               </div>
 
@@ -578,7 +673,14 @@
               <div class="col-md-10 col-10" style="align-items: start">
                 <ul>
                   <li style="color: #7c7979">Address</li>
-                  <li>Kalapaluwawa, Rajagiriya</li>
+                  <li>
+                    <a
+                      href="https://goo.gl/maps/Ng5dL6iak1tnBxUr5"
+                      style="text-decoration: none; color: white"
+                    >
+                      Kalapaluwawa, Rajagiriya
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -647,6 +749,12 @@
       $(document).ready(function () {
         $('[data-toggle="tooltip"]').tooltip();
       });
+    </script>
+
+    <!--FilteriZ-->
+
+    <script>
+      var filterizd = $(".filtr-container").filterizr({});
     </script>
   </body>
 </html>
