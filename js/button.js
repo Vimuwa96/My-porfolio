@@ -1,21 +1,14 @@
-var $backToTop = $(".back-to-top");
-$backToTop.hide();
+var btn = $('#button');
 
-
-$(window).on('scroll', function() {
-  if ($(this).scrollTop() > 100) {
-    $backToTop.fadeIn(1200);
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
   } else {
-    $backToTop.fadeOut(1200);
+    btn.removeClass('show');
   }
 });
 
-$backToTop.on('click', function(e) {
-  $("html,body").animate({scrollTop: 0}, 500);
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
 });
-
-
-
-
-
-
