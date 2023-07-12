@@ -141,6 +141,22 @@
   left: 25%;
 }
 
+
+.services-wrapper{
+  background-color: rgb(25, 20, 42) !important;
+  color: white;
+}
+
+.headings{
+  color: rgb(160, 152, 153) !important;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+}
+
+
+
+
+
 .portfolio-wrapper {
   background-color: rgb(25, 20, 42) !important;
   color: white;
