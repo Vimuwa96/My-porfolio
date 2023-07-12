@@ -232,3 +232,11 @@
   background-color: rgb(42, 35, 68);
 
 }
+.tables{
+  border: none;
+}
+
+ul li{
+  color: white;
+  list-style: none;
+}
