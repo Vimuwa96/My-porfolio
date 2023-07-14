@@ -28,6 +28,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <!-- Click Waves -->
+    <link rel="stylesheet" href="js/jquery-waves.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <!-- Filteizer -->
     <script type="text/javascript" src="js/jquery.filterizr.min.js"></script>
 
     <!-- Bootstrap CDN -->
@@ -113,11 +119,11 @@
             <p class="designation">Full Stack Web Developer</p>
 
             <p class="description">
-              My name is Vimukthi Malinda Rupasinghe from Colombo, Sri Lanka, and I am
-              passionate about creating exceptional online experiences. With a
-              strong background in web development and a keen eye for design, I
-              specialize in crafting visually stunning and highly functional
-              websites.
+              My name is Vimukthi Malinda Rupasinghe from Colombo, Sri Lanka,
+              and I am passionate about creating exceptional online experiences.
+              With a strong background in web development and a keen eye for
+              design, I specialize in crafting visually stunning and highly
+              functional websites.
             </p>
 
             <p style="text-transform: uppercase; color: #7c7979">
@@ -241,7 +247,7 @@
             <img src="imges/booking.png" alt="" width="50" class="icon" />
             <div class="cards text-center p-5">
               <div class="content-wrapper">
-                <span class="number align-middle">4+</span> <br />
+                <span class="number align-middle">4</span> <br />
                 <span class="text align-middle"> Apps</span>
               </div>
             </div>
@@ -257,11 +263,13 @@
         <p><span class="portfolio">Services</span></p>
 
         <div class="row pb-3">
+
+          
           <div class="col-md-6">
             <p class="headings">
-              <span
+              <!-- <span
                 style="border-left: 15px solid black; padding-right: 10px"
-              ></span>
+              ></span> -->
               Web Designing
             </p>
             <p style="text-align: justify">
@@ -271,13 +279,13 @@
               understanding of user-centered design principles and the latest
               industry trends.
             </p>
-          </div>
+        </div>
 
           <div class="col-md-6">
             <p class="headings">
-              <span
+              <!-- <span
                 style="border-left: 15px solid black; padding-right: 10px"
-              ></span>
+              ></span> -->
               Web development
             </p>
             <p style="text-align: justify">
@@ -308,7 +316,18 @@
                 src="imges/wordpress.png"
                 alt=""
                 data-toggle="tooltip"
-                title="Laravel 10"
+                title="Wordpress"
+                data-bs-placement="bottom"
+                style="height: 50px"
+              />
+            </li>
+
+            <li style="color: rgb(231, 153, 153)">
+              <img
+                src="imges/woocommerce.png"
+                alt=""
+                data-toggle="tooltip"
+                title="Woocommerce"
                 data-bs-placement="bottom"
                 style="height: 50px"
               />
@@ -382,9 +401,7 @@
           <div class="col-md-3">
             <p><span class="portfolio">Portfolio</span></p>
 
-            <p>
-              Here, some of my projects I demo here for your reference. 
-            </p>
+            <p>Here, some of my projects I demo here for your reference.</p>
           </div>
 
           <div class="col-md-2"></div>
@@ -588,7 +605,8 @@
         <p><span class="portfolio pb-5">Contact Me</span></p>
 
         <p style="color: white">
-          If you have any further queries regarding the conditions of the contract please do not hesitate to contact me.
+          If you have any further queries regarding the conditions of the
+          contract please do not hesitate to contact me.
         </p>
 
         <div class="row pt-3">
@@ -767,5 +785,9 @@
     <script>
       var filterizd = $(".filtr-container").filterizr({});
     </script>
+
+    <!-- Click Waves -->
+    <script src="js/jquery-waves.min.js"></script>
+
   </body>
 </html>
